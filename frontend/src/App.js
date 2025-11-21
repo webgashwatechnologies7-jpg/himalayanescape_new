@@ -8,6 +8,7 @@ import About from "./pages/About";
 import Contact from "./pages/Contact";
 import HimachalPackages from "./pages/HimachalPackages";
 import SpitiPackages from "./pages/SpitiPackages";
+import PackageDetail from "./pages/PackageDetail";
 import { PrivacyPolicy, Terms, RefundPolicy, Disclaimer } from "./pages/LegalPage";
 import { Toaster } from "./components/ui/sonner";
 
@@ -22,6 +23,7 @@ function App() {
           <Route path="/contact" element={<Contact />} />
           <Route path="/packages/himachal" element={<HimachalPackages />} />
           <Route path="/packages/spiti" element={<SpitiPackages />} />
+          <Route path="/package/:id" element={<PackageDetail />} />
           <Route path="/privacy-policy" element={<PrivacyPolicy />} />
           <Route path="/terms" element={<Terms />} />
           <Route path="/refund-policy" element={<RefundPolicy />} />
