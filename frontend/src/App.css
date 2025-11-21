@@ -1,7 +1,7 @@
 /* Fade in up animation */
 @keyframes fade-in-up {
   from {
-    opacity: 0;
+    opacity: 0; 
     transform: translateY(30px);
   }
   to {
