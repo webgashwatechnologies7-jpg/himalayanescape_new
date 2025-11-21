@@ -32,7 +32,41 @@ export const himachalPackages = [
     image: "https://images.unsplash.com/photo-1605649487212-47bdab064df7?w=800&q=80",
     description: "Explore the colonial charm of Shimla and adventure paradise of Manali with scenic valleys and snow-capped mountains.",
     price: "₹18,999",
-    highlights: ["Solang Valley", "Rohtang Pass", "Mall Road", "Hidimba Temple"]
+    highlights: ["Solang Valley", "Rohtang Pass", "Mall Road", "Hidimba Temple"],
+    images: [
+      "https://images.unsplash.com/photo-1605649487212-47bdab064df7?w=800&q=80",
+      "https://images.unsplash.com/photo-1626621341517-bbf3d9990a23?w=800&q=80",
+      "https://images.unsplash.com/photo-1549211331-df6fd46a8e5f?w=800&q=80"
+    ],
+    itinerary: [
+      { day: 1, title: "Arrival in Shimla", description: "Arrive at Shimla, check into hotel. Evening walk at Mall Road and Ridge. Visit Christ Church and enjoy sunset views." },
+      { day: 2, title: "Shimla Sightseeing", description: "Visit Kufri, Jakhoo Temple, and Indian Institute of Advanced Study. Explore local markets in the evening." },
+      { day: 3, title: "Shimla to Manali", description: "Drive to Manali (280 km, 7-8 hours). En-route visit Kullu Valley. Check into hotel and relax." },
+      { day: 4, title: "Manali Local Sightseeing", description: "Visit Hadimba Temple, Manu Temple, Vashisht Hot Springs, and Old Manali. Evening at Mall Road." },
+      { day: 5, title: "Solang Valley & Rohtang Pass", description: "Full day excursion to Solang Valley and Rohtang Pass (if accessible). Adventure activities like paragliding, zorbing available." },
+      { day: 6, title: "Departure", description: "Check out from hotel. Drop at airport/bus stand for onward journey with beautiful memories." }
+    ],
+    inclusions: [
+      "5 Nights accommodation in 3-star hotels",
+      "Daily breakfast and dinner",
+      "All transfers and sightseeing by private vehicle",
+      "Driver allowance, toll taxes, parking",
+      "GST included"
+    ],
+    exclusions: [
+      "Airfare/train tickets",
+      "Lunch and beverages",
+      "Entry fees to monuments",
+      "Adventure activities charges",
+      "Personal expenses",
+      "Travel insurance"
+    ],
+    importantInfo: [
+      "Rohtang Pass is subject to weather conditions and permits",
+      "Carry warm clothes even in summer",
+      "Valid ID proof required for hotel check-in",
+      "Best time to visit: March to June, October to February"
+    ]
   },
   {
     id: 2,
@@ -41,7 +75,38 @@ export const himachalPackages = [
     image: "https://images.unsplash.com/photo-1626621341517-bbf3d9990a23?w=800&q=80",
     description: "Immerse in Tibetan culture, visit monasteries, and enjoy panoramic Himalayan views in this spiritual retreat.",
     price: "₹12,999",
-    highlights: ["Dalai Lama Temple", "Bhagsu Waterfall", "Triund Trek", "Tibetan Market"]
+    highlights: ["Dalai Lama Temple", "Bhagsu Waterfall", "Triund Trek", "Tibetan Market"],
+    images: [
+      "https://images.unsplash.com/photo-1626621341517-bbf3d9990a23?w=800&q=80",
+      "https://images.unsplash.com/photo-1506905925346-21bda4d32df4?w=800&q=80",
+      "https://images.unsplash.com/photo-1551632811-561732d1e306?w=800&q=80"
+    ],
+    itinerary: [
+      { day: 1, title: "Arrival in Dharamshala", description: "Arrive at Dharamshala, transfer to McLeodganj. Check into hotel. Evening visit to local market and cafes." },
+      { day: 2, title: "McLeodganj Sightseeing", description: "Visit Dalai Lama Temple, Namgyal Monastery, Tibet Museum, St. John Church. Explore Tibetan culture and cuisine." },
+      { day: 3, title: "Triund Trek or Local Exploration", description: "Option 1: Trek to Triund (9 km). Option 2: Visit Bhagsu Waterfall, Bhagsunath Temple, Dal Lake, Naddi viewpoint." },
+      { day: 4, title: "Departure", description: "Check out from hotel. Drop at airport/bus stand. Take home memories of spiritual Himalayas." }
+    ],
+    inclusions: [
+      "3 Nights accommodation",
+      "Daily breakfast",
+      "All transfers by private vehicle",
+      "Sightseeing as per itinerary",
+      "GST included"
+    ],
+    exclusions: [
+      "Meals not mentioned",
+      "Triund trek guide and porter charges",
+      "Entry fees",
+      "Personal expenses",
+      "Insurance"
+    ],
+    importantInfo: [
+      "Triund trek is moderately difficult",
+      "Carry trekking shoes if planning Triund",
+      "Many Tibetan restaurants serve authentic cuisine",
+      "Best time: March to June, September to December"
+    ]
   },
   {
     id: 3,
@@ -50,7 +115,40 @@ export const himachalPackages = [
     image: "https://images.unsplash.com/photo-1551632811-561732d1e306?w=800&q=80",
     description: "Perfect blend of backpacker vibes in Kasol and thrilling trek to natural hot springs at Kheerganga.",
     price: "₹15,499",
-    highlights: ["Parvati Valley", "Kheerganga Trek", "Hot Springs", "Cafe Culture"]
+    highlights: ["Parvati Valley", "Kheerganga Trek", "Hot Springs", "Cafe Culture"],
+    images: [
+      "https://images.unsplash.com/photo-1551632811-561732d1e306?w=800&q=80",
+      "https://images.unsplash.com/photo-1506905925346-21bda4d32df4?w=800&q=80",
+      "https://images.unsplash.com/photo-1605649487212-47bdab064df7?w=800&q=80"
+    ],
+    itinerary: [
+      { day: 1, title: "Arrival in Kasol", description: "Arrive at Bhuntar, drive to Kasol. Check into hotel/camp. Evening exploration of Kasol market and riverside cafes." },
+      { day: 2, title: "Kasol to Tosh Valley", description: "Day trip to Tosh village. Experience local culture, stunning views. Return to Kasol. Evening bonfire." },
+      { day: 3, title: "Kheerganga Trek Day 1", description: "Trek from Barshaini to Kheerganga (12 km, 5-6 hours). Enjoy natural hot springs. Overnight camping at Kheerganga." },
+      { day: 4, title: "Kheerganga to Kasol", description: "Morning at hot springs. Trek back to Barshaini and drive to Kasol. Rest and relax." },
+      { day: 5, title: "Departure", description: "Check out. Drop at Bhuntar for onward journey. Visit Manikaran Sahib if time permits." }
+    ],
+    inclusions: [
+      "4 Nights accommodation (hotel + camping)",
+      "All meals during trek",
+      "Trekking guide and equipment",
+      "All transfers",
+      "Forest permits",
+      "GST"
+    ],
+    exclusions: [
+      "Meals in Kasol (except trek days)",
+      "Personal trekking gear",
+      "Porter charges",
+      "Insurance",
+      "Any expenses of personal nature"
+    ],
+    importantInfo: [
+      "Moderate fitness level required for Kheerganga trek",
+      "Carry warm clothes and rain gear",
+      "Limited network connectivity during trek",
+      "Best time: April to June, September to November"
+    ]
   }
 ];
 
