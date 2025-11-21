@@ -1,26 +1,41 @@
-import React from 'react';
+import React, { useState } from 'react';
 import { useNavigate } from 'react-router-dom';
-import { Clock, MapPin, Star, ArrowRight } from 'lucide-react';
+import { Clock, MapPin, Star, ArrowRight, ImageOff } from 'lucide-react';
 
 const PackageCard = ({ package: pkg, onEnquiry }) => {
   const navigate = useNavigate();
+  const [imageError, setImageError] = useState(false);
 
   const handleViewDetails = () => {
     navigate(`/package/${pkg.id}`);
   };
 
+  const handleImageError = () => {
+    setImageError(true);
+  };
+
   return (
     <div className="bg-white rounded-2xl overflow-hidden shadow-lg hover:shadow-2xl transition-all duration-300 transform hover:-translate-y-2 group">
       {/* Image */}
-      <div 
+      <div
         className="relative h-64 overflow-hidden cursor-pointer"
         onClick={handleViewDetails}
       >
-        <img
-          src={pkg.image}
-          alt={pkg.name}
-          className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500"
-        />
+        {!imageError ? (
+          <img
+            src={pkg.image}
+            alt={pkg.name}
+            className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500"
+            onError={handleImageError}
+          />
+        ) : (
+          <div className="w-full h-full bg-gradient-to-br from-teal-500 to-teal-700 flex items-center justify-center">
+            <div className="text-center text-white p-6">
+              <ImageOff size={48} className="mx-auto mb-3 opacity-50" />
+              <p className="font-bold text-lg">{pkg.name}</p>
+            </div>
+          </div>
+        )}
         <div className="absolute top-4 right-4 bg-teal-600 text-white px-4 py-2 rounded-full font-bold shadow-lg">
           {pkg.price}
         </div>
@@ -34,13 +49,13 @@ const PackageCard = ({ package: pkg, onEnquiry }) => {
 
       {/* Content */}
       <div className="p-6">
-        <h3 
+        <h3
           className="text-2xl font-bold text-slate-900 mb-3 group-hover:text-teal-600 transition-colors cursor-pointer"
           onClick={handleViewDetails}
         >
           {pkg.name}
         </h3>
-        
+
         <div className="flex items-center gap-2 text-slate-600 mb-4">
           <Clock size={18} className="text-teal-600" />
           <span className="text-sm font-medium">{pkg.duration}</span>
